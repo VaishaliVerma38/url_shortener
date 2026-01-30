@@ -87,9 +87,11 @@ git clone https://github.com/VaishaliVerma38/url_shortener.git
 cd url-shortener
 
 ###2️⃣ Install Dependencies
+```bash
 composer install
 
 ###3️⃣ Environment Setup
+```bash
 cp .env.example .env
 php artisan key:generate
 
@@ -97,10 +99,12 @@ php artisan key:generate
 Update database credentials in the .env file.
 
 ###4️⃣ Run Migrations & Seeders
+```bash
 php artisan migrate --seed
 
 
 The SuperAdmin user is created via a database seeder.
 
 ###5️⃣ Start the Application
+```bash
 php artisan serve
