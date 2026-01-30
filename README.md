@@ -81,30 +81,25 @@ This application supports a **multi-company architecture**, **role-based access 
 
 ## 🚀 Local Setup Instructions
 
-### 1️⃣ Clone the Repository
-```bash
+1️⃣ Clone the Repository
 git clone https://github.com/VaishaliVerma38/url_shortener.git
 cd url-shortener
 
-###2️⃣ Install Dependencies
-```bash
+2️⃣ Install Dependencies
 composer install
 
-###3️⃣ Environment Setup
-```bash
+3️⃣ Environment Setup
 cp .env.example .env
 php artisan key:generate
 
 
 Update database credentials in the .env file.
 
-###4️⃣ Run Migrations & Seeders
-```bash
+4️⃣ Run Migrations & Seeders
 php artisan migrate --seed
 
 
 The SuperAdmin user is created via a database seeder.
 
-###5️⃣ Start the Application
-```bash
+5️⃣ Start the Application
 php artisan serve
